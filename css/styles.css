@@ -2,17 +2,34 @@ body{
     background-image: url("../img/wallpaper_save_it.jpg");
 }
 
-.main-container{
-    margin-top: 50px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 .jumbotron {
     background-color: white;
 }
 
-form{
+/*********************************************/
 
+#index-container{
+    margin-top: 150px;
+    margin-left: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+/*Sign Up Page*/
+
+#signup-container{
+    margin-top: 150px;
+    margin-left: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+    width: 800px;
+}
+
+/*Log In Page*/
+#login-container{
+    
 }

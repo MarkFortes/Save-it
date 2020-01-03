@@ -19,13 +19,16 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My data</a>
+                    <a class="nav-link" href="#">Mis datos</a>
                 </li>
             </ul>
             <!--Right navbar-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
+                    <a class="nav-link" href="signup.php">Registrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Iniciar sesión</a>
                 </li>
             </ul>
         </div>
