@@ -11,15 +11,22 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="navbar-brand" href="#">Save It</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Mis datos</a>
-            </li>
-        </ul>
+        <div class="container-fluid"> <!--Expands the whole navbar along the width page-->
+            <a class="navbar-brand" href="#">Save it!</a>
+            <!--Left navbar-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My data</a>
+                </li>
+            </ul>
+            <!--Right navbar-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up</a>
+                </li>
+            </ul>
+        </div>
     </nav>
