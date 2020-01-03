@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid"> <!--Expands the whole navbar along the width page-->
-            <a class="navbar-brand" href="#">Save it!</a>
+            <a class="navbar-brand" href="#">Save it</a>
             <!--Left navbar-->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
