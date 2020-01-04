@@ -1,18 +1,16 @@
 <!--Header-->
 <?php
-    require_once("plantillas/header.php");
+    require_once("plantillas/headerUnlogged.php");
 ?>
 
     <div class="container" id="index-container">
-        <div class="row">
+        <div class="row justify-content-center-center align-items-center">
             <div class="col-8">
-                <div class="jumbotron jumbotron-fluid hoverable p-4">
-                    <div class="container">
-                        <h1><b>Controla tu vida financiera</b></h1>
-                        <hr>
-                        <p>Tu aplicación donde podrás guardar, ver, editar y eliminar tus movimientos financieros.</p>
-                        <button type="button" class="btn btn-secondary">Leer más </button>
-                    </div>
+                <div class="jumbotron">
+                    <h1><b>Controla tu vida financiera</b></h1>
+                    <hr>
+                    <p>Tu aplicación donde podrás guardar, ver, editar y eliminar tus movimientos financieros.</p>
+                    <button type="button" class="btn btn-secondary">Leer más </button>
                 </div>
             </div>
             <div class="col-4">
@@ -29,10 +27,13 @@
                     <div class="form-group">
                         <label><b>Contraseña:</b></label>
                         <input class="form-control" type="password" required>
-                        <p><a href="#">¿Has olvidado tu contraseña?</a></p>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                    <div class="form-group">
+                        <p><a href="#">¿Has olvidado tu contraseña?</a></p>
+                        <p><a href="login.php">¿Ya eres miembro de Save it?</a></p>
                     </div>
                 </form>
             </div>

@@ -1,13 +1,29 @@
 <!--Header-->
 <?php
-    require_once("plantillas/header.php");
+    require_once("plantillas/headerUnlogged.php");
 ?>
 
-<div class="container" id="signup-container">
-    <div class="row">
-        <h1>Hola</h1>
+<div class="container" id="login-container">
+    <div class="row justify-content-center" style="padding:10px;">
+        <h1>Iniciar sesión</h1>
     </div>
-</div>
+    <div class="row justify-content-center">
+        <div class="col-md-12" id="col-signup">
+            <form action="controladores/validateUserController.php" method="post">
+                <div class="form-group">
+                    <label><b>Nombre de usuario o correo electrónico:</b></label>
+                    <input class="form-control" type="text" name="txtUsername">
+                </div>
+                <div class="form-group">
+                    <label><b>Contraseña:</b></label>
+                    <input class="form-control" type="password" name="txtPassword">
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" class="btn btn-primary" style="align:center" value="Entrar">
+                </div>
+            </form>
+        </div>
+    </div>
 
 <!--Footer-->
 <?php

@@ -9,27 +9,28 @@ body{
 /*********************************************/
 
 #index-container{
-    margin-top: 150px;
-    margin-left: 100px;
+    margin: 50px auto 0;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    line-height: 30px;
 }
 
 /*Sign Up Page*/
-
 #signup-container{
-    margin-top: 150px;
-    margin-left: 100px;
+    margin: 50px auto 0;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     line-height: 30px;
-    width: 800px;
+    width: 500px;
 }
 
 /*Log In Page*/
 #login-container{
-    
+    margin: 50px auto 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+    width: 500px;
 }
