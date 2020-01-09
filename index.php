@@ -15,18 +15,22 @@
             </div>
             <div class="col-4">
                 <h2>Crear cuenta</h2>
-                <form action="" method="post">
+                <form action="controladores/createUserController.php" method="post">
                     <div class="form-group">
                         <label><b>Usuario:</b></label>
-                        <input class="form-control" type="text" required>
+                        <input class="form-control" type="text" name="txtNickname" required>
                     </div>
                     <div class="form-group">
                         <label><b>Correo electrónico:</b></label>
-                        <input class="form-control" type="email" required>
+                        <input class="form-control" type="email" name="txtEmail" required>
                     </div>
                     <div class="form-group">
                         <label><b>Contraseña:</b></label>
-                        <input class="form-control" type="password" required>
+                        <input class="form-control" type="password" name="txtPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Repite la contraseña:</b></label>
+                        <input class="form-control" type="password" name="txtPasswordRepeated" required>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Registrar</button>

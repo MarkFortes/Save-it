@@ -1,5 +1,7 @@
 <?php
 
+  require_once("validateData.php");
+
   class UsersManagament{
 
     public static function validateUser($conn, $nick, $pass){
@@ -13,6 +15,10 @@
       }else {
         return false;
       }
+    }
+
+    public static function createUser($conn, $nick, $email, $pass, $pass2){
+      
     }
 
   }
