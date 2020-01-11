@@ -31,7 +31,7 @@
 
       if ($nickAvailable == true && $emailAvailable == true) {
         UsersManagament::createUser($conn, $nick, $pass, $email);
-        echo "Usuario registrado con éxito";
+        header("Location:../login.php");
       }else {
         "Usuario no disponible";
       }
