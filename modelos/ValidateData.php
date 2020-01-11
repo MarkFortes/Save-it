@@ -16,8 +16,16 @@
             }
         }
 
-        public static function existsEmail($email){
-
+        public static function existsEmail($conn, $email){
+          $query = "SELECT * FROM users WHERE email_user = :email";
+          $stmt = $conn->getConnection()->prepare($query);
+          $stmt->bindValue(":email", $email);
+          $stmt->execute();
+          if ($stmt->rowCount() > 0) { //Quiere decir que existe el username pasado por parametro
+            return true;
+          }else { //No existe
+            return false;
+          }
         }
 
     }

@@ -33,7 +33,7 @@
                         <input class="form-control" type="password" name="txtPasswordRepeated" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Registrar</button>
+                        <button type="submit" class="btn btn-primary" name="btnEnviar">Registrar</button>
                     </div>
                     <div class="form-group">
                         <p><a href="#">¿Has olvidado tu contraseña?</a></p>

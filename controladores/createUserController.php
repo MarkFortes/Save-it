@@ -11,10 +11,33 @@
 
     $conn = new Connection();
 
-    if(ValidateData::existsNickname($conn, $nick) == false){ //Nickname no existe
-        echo "Usuario disponible";
+    if($pass == $pass2){
+      $nickAvailable;
+      $emailAvailable;
+      //Nickname disponible para asignar
+      if (ValidateData::existsNickname($conn, $nick) == false) {
+        $nickAvailable = true;
+      }else {
+        $nickAvailable = false;
+        echo "Nombre de usuario ya registrado.";
+      }
+
+      if (ValidateData::existsEmail($conn, $email) == false) {
+        $emailAvailable = true;
+      }else {
+        $emailAvailable = false;
+        echo "Email ya registrado.";
+      }
+
+      if ($nickAvailable == true && $emailAvailable == true) {
+        UsersManagament::createUser($conn, $nick, $pass, $email);
+        echo "Usuario registrado con éxito";
+      }else {
+        "Usuario no disponible";
+      }
+
     }else{ //Nickname ya existe
-        echo "Usuario ya existe";
+        echo "Las contraseñas no coinciden";
     }
 
 ?>
