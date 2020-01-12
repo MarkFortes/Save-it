@@ -10,10 +10,10 @@
 ?>
 
 <div class="container" id="signup-container">
-    <div class="row justify-content-center" style="padding:10px;">
+    <div class="row justify-content-center">
         <h1>Crear usuario</h1>
     </div>
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col-md-12" id="col-signup">
             <form action="controladores/createUserController.php" method="post">
                 <div class="form-group">

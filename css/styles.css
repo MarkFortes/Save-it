@@ -1,6 +1,8 @@
 body{
-    background-image: url("../img/wallpaper_save_it.jpg");
+    /*background-image: url("../img/wallpaper_save_it.jpg");*/
 }
+
+
 
 .jumbotron {
     background-color: white;
@@ -22,7 +24,6 @@ body{
     padding: 20px;
     border-radius: 10px;
     line-height: 30px;
-    width: 500px;
 }
 
 /*Log In Page*/
@@ -32,5 +33,4 @@ body{
     padding: 20px;
     border-radius: 10px;
     line-height: 30px;
-    width: 500px;
 }

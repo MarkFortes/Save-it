@@ -9,7 +9,7 @@
   require_once("plantillas/headerLogged.php");
 ?>
 
-<p>Bienvenido <?php echo $_SESSION["user"]; ?></p>
+
 
 <?php
   require_once("plantillas/footer.php");
