@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (isset($_SESSION["user"])) {
+      header("Location:home.php");
+    }
+?>
 <!--Header-->
 <?php
     require_once("plantillas/headerUnlogged.php");

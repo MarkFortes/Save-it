@@ -1,9 +1,10 @@
 <?php
 
-    require_once("../modelos/Connection.php");
-    require_once("../modelos/UsersManagament.php");
-    require_once("../modelos/ValidateData.php");
+  require_once("../modelos/Connection.php");
+  require_once("../modelos/UsersManagament.php");
+  require_once("../modelos/ValidateData.php");
 
+  if (isset($_POST["btnEnviar"])) {
     $nick = $_POST["txtNickname"];
     $email = $_POST["txtEmail"];
     $pass = $_POST["txtPassword"];
@@ -39,5 +40,6 @@
     }else{ //Nickname ya existe
         echo "Las contraseñas no coinciden";
     }
+  }
 
 ?>

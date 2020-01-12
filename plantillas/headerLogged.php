@@ -11,14 +11,14 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Save it</a>
+    <a class="navbar-brand" href="home.php">Save it</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="home.php">Home</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Estadísticas</a>
@@ -26,7 +26,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.php">Salir</a>
+          <a class="nav-link" href="controladores/logoutController.php">Salir</a>
         </li>
       </ul>
     </div>
