@@ -1,6 +1,6 @@
 //ALERTS SIGN UP
 
-var ;
+var nickname;
 var email;
 var password;
 
@@ -35,7 +35,7 @@ function showAlertNickname(){
 }
 
 function showAlertEmail(){
-    
+
 }
 
 function alertPasswordLength(boolean){
