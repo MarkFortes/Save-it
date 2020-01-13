@@ -40,13 +40,8 @@
                   <label><b>Contraseña:</b></label>
                   <input class="form-control" id="txtPassword" onkeyup="checkPassword()" type="password" name="txtPassword" required>
               </div>
-              <!--Alert-->
-              <div class="alert alert-danger" id="alert-password-length" hidden>
-                Debe tener 6 o más carácteres.
-              </div>
-              <!---->
               <div class="form-group">
-                  <button type="submit" class="btn btn-primary" id="btnEnviar" name="btnEnviar" disabled>Registrar</button>
+                  <button type="submit" class="btn btn-primary" id="btnEnviar" name="btnEnviar">Registrar</button>
               </div>
               <div class="form-group">
                   <p><a href="#">¿Has olvidado tu contraseña?</a></p>
@@ -59,9 +54,6 @@
   </div>
 </div>
 
-<!--JS-->
-<script src="js/alertsSignUp.js"></script>
-<!---->
 
 <!--Footer-->
 <?php

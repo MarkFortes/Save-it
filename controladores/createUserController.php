@@ -8,11 +8,9 @@
     $nick = $_POST["txtNickname"];
     $email = $_POST["txtEmail"];
     $pass = $_POST["txtPassword"];
-    $pass2 = $_POST["txtPasswordRepeated"];
 
     $conn = new Connection();
 
-    if($pass == $pass2){
       $nickAvailable;
       $emailAvailable;
       //Nickname disponible para asignar
@@ -36,10 +34,6 @@
       }else {
         "Usuario no disponible";
       }
-
-    }else{ //Nickname ya existe
-        echo "Las contraseñas no coinciden";
-    }
   }
 
 ?>
