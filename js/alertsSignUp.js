@@ -3,6 +3,7 @@
 var ;
 var email;
 var password;
+
 var validNickname = false;
 var validEmail = false;
 var validPassword = false;
