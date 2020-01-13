@@ -4,14 +4,16 @@
       header("Location:home.php");
     }
 ?>
+
 <!--Header-->
 <?php
     require_once("plantillas/headerUnlogged.php");
 ?>
+<!---->
 
 <div class="container" id="signup-container">
     <div class="row justify-content-center">
-        <h1>Crear usuario</h1>
+        <h1>Crea tu usuario</h1>
     </div>
     <div class="row">
         <div class="col-md-12" id="col-signup">
@@ -26,20 +28,30 @@
                 </div>
                 <div class="form-group">
                     <label><b>Contraseña:</b></label>
-                    <input class="form-control" type="password" name="txtPassword" required>
+                    <input class="form-control" id="txtPassword" onkeyup="checkPassword()" type="password" name="txtPassword" required>
                 </div>
-                <div class="form-group">
-                    <label><b>Repite la contraseña:</b></label>
-                    <input class="form-control" type="password" name="txtPasswordRepeated" required>
+                <!--Alert-->
+                <div class="alert alert-danger" id="alert-password-length" hidden>
+                    Debe tener 6 o más carácteres.
                 </div>
+                <!---->
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn-primary" style="align:center" name="btnEnviar">Registrar</button>
+                    <button type="submit" class="btn btn-primary" id="btnEnviar" style="align:center" name="btnEnviar" disabled>Registrar</button>
                 </div>
             </form>
+            <div class="alert alert-success">
+                Todo correcto.
+            </div>
         </div>
     </div>
+</div>
+
+<!--JS-->
+<script src="js/alertsSignUp.js"></script>
+<!---->
 
 <!--Footer-->
 <?php
     require_once("plantillas/footer.php");
 ?>
+<!---->

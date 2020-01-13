@@ -11,7 +11,7 @@
 
 <div class="container" id="index-container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 no-padding">
       <div class="row">
         <div class="col-md-12">
           <div class="jumbotron">
@@ -25,8 +25,8 @@
     </div>
     <div class="col-md-4">
       <div class="row">
-        <div class="col-md-12">
-          <h2>Crear cuenta</h2>
+        <div class="col-md-12 no-padding">
+          <h1>Crear cuenta</h1>
           <form action="controladores/createUserController.php" method="post">
               <div class="form-group">
                   <label><b>Usuario:</b></label>
@@ -38,14 +38,15 @@
               </div>
               <div class="form-group">
                   <label><b>Contraseña:</b></label>
-                  <input class="form-control" type="password" name="txtPassword" required>
+                  <input class="form-control" id="txtPassword" onkeyup="checkPassword()" type="password" name="txtPassword" required>
               </div>
-              <div class="form-group">
-                  <label><b>Repite la contraseña:</b></label>
-                  <input class="form-control" type="password" name="txtPasswordRepeated" required>
+              <!--Alert-->
+              <div class="alert alert-danger" id="alert-password-length" hidden>
+                Debe tener 6 o más carácteres.
               </div>
+              <!---->
               <div class="form-group">
-                  <button type="submit" class="btn btn-primary" name="btnEnviar">Registrar</button>
+                  <button type="submit" class="btn btn-primary" id="btnEnviar" name="btnEnviar" disabled>Registrar</button>
               </div>
               <div class="form-group">
                   <p><a href="#">¿Has olvidado tu contraseña?</a></p>
@@ -57,6 +58,10 @@
     </div>
   </div>
 </div>
+
+<!--JS-->
+<script src="js/alertsSignUp.js"></script>
+<!---->
 
 <!--Footer-->
 <?php
