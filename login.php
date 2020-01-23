@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if (isset($_SESSION["user"])) {
+    if (isset($_SESSION["nick"])) {
       header("Location:home.php");
     }
 ?>
@@ -28,7 +28,7 @@
           $conn = new Connection();
           if (UsersManagament::validateUser($conn,$nick_email,$pass) == true) {
             session_start();
-            $_SESSION["user"] = $nick_email;
+            $_SESSION["nick"] = $nick_email;
             header("Location:home.php");
           }else {
             echo "<div class='alert alert-danger'>

@@ -32,6 +32,15 @@
       }
     }
 
+    public static function getId($conn, $nick){
+      $query = "SELECT id_user FROM users WHERE nick_user = :nick";
+      $stmt = $conn->getConnection()->prepare($query);
+      $stmt->bindValue(":nick", $nick);
+      $stmt->execute();
+      $row = $stmt->fetch(PDO::FETCH_ASSOC);
+      return $row["id_user"];
+    }
+
   }
 
 

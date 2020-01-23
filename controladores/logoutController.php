@@ -1,8 +1,8 @@
 <?php
   session_start();
 
-  if (isset($_SESSION["user"])) {
-    unset($_SESSION["user"]);
+  if (isset($_SESSION["nick"])) {
+    unset($_SESSION["nick"]);
     header("Location:../index.php");
   }
 ?>
