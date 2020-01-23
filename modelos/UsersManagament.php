@@ -1,6 +1,6 @@
 <?php
 
-  require_once("validateData.php");
+  require_once("ValidateData.php");
 
   class UsersManagament{
 
